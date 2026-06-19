@@ -1,0 +1,10 @@
+# Ignore the huge raw data
+data/raw/
+*.csv
+*.parquet
+
+# Ignore python cache and environment
+__pycache__/
+.env
+venv/
+.ipynb_checkpoints/
