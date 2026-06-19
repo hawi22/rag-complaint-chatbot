@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+sentence-transformers
+langchain
+langchain-community
+faiss-cpu  # or chromadb
+transformers
+torch
+streamlit
+python-dotenv
