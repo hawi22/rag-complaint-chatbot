@@ -12,3 +12,11 @@ Credit Card: 197,126 records
 Savings Account: 155,204 records
 Money Transfer: 98,701 records
 Personal Loan: 37,341 records
+### Task 2: Chunking & Vector Store (Completed ✅)
+Developed a semantic search engine using a stratified sample of 15,000 complaints.
+
+**Key Technical Decisions:**
+*   **Stratified Sampling:** Maintained proportional representation across Credit Cards, Loans, Savings, and Money Transfers to avoid model bias.
+*   **Chunking Strategy:** Used `RecursiveCharacterTextSplitter` with `chunk_size=500` and `overlap=50`. This resulted in **46,931 chunks**, allowing for granular retrieval of specific customer pain points.
+*   **Embedding Model:** Implemented `all-MiniLM-L6-v2` locally to ensure high-speed processing and bypass network SSL restrictions.
+*   **Vector Database:** Utilized **FAISS** (Facebook AI Similarity Search) for its efficient CPU-based indexing and local persistence.
